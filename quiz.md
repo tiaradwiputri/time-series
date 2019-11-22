@@ -77,7 +77,7 @@ After we analyze the decomposition result of `train_theft`, we are ready to buil
  - [ ] HoltWinters(train, beta = F)
  - [ ] HoltWinters(train, beta = F, gamma = F)
 
-Now let's explore another method to forecast our `train_theft` data using ARIMA algorithm. Let's build ARIMA model using `stlm()` function and store it under `model_arima` object.
+Now let's explore another method to forecast our `train_theft` data using ARIMA algorithm. Let's build ARIMA model using `stlm()` function and set the method argument is `arima` then store it under `model_arima` object.
 
 ```
 # your code here
