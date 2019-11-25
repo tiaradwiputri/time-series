@@ -15,7 +15,7 @@ The `theft` data consists of 6.492 observations and  2 variables. `theft` datase
 
 As a data sciencetist you will develop a forecasting modeling that aid security or endurance parties in making decision. Aim of making this forecasting model is to anticipate if there is a crime happened and allocate security parties in many city of Chicago. Based on our data, we want to predict the number of theft incident based on `Amount_Theft` by `Date` column.
 
-Before we make a forecasting model, let inspect our data first. Is our data is a time series object or not? If it's not please make a time series object using the `theft` data using `ts()` function with frequency of this period is 365 and store it under `theft_ts`. Using `theft_ts` visualize it with `autoplot()`.
+Before we make a forecasting model, let inspect our data first. Is our data is a time series object or not? If it's not please make a time series object using the `theft` data using `ts()` function with frequency of this period is 365 and store it under `theft_ts`. From `theft_ts` subset it which contain the first 10 years using `head()` and visualize it with `autoplot()` and answer the first question.
 
 ```
 # your code here
@@ -108,9 +108,9 @@ Now we have the forecasting result of the Holt-Winters model and ARIMA model. To
 ## Model Evaluation Quiz
 
 6. Based on the error result we have got, which of this following statement about model evaluation using error measure is TRUE?
- - [ ] using ARIMA model, the average error for each forecasting result is 11.6%
- - [ ] using Holt-Winters model, the average error of each forecasting result is around 11.6 theft event
- - [ ] the MAPE difference between ARIMA and Holt-Winters model by 1.1%
+ - [ ] using ARIMA model, the mean absolute of percentage error for each forecasting result is 11.6%
+ - [ ] using Holt-Winters model, the mean absolute of percentage error for each forecasting result is around 11.6 theft event
+ - [ ] the mean absolute of percentage error difference between ARIMA and Holt-Winters model by 1.1%
 
 # Model evaluation (Assumtion Checking)
 
@@ -119,12 +119,12 @@ There are some assumptions we apply when we use time series analysis. These assu
 ## Assumption Checking Quiz
 
 7. To make sure that our forecasting model is reliable enough, what assumption should be checked in time series analysis?
- - [ ] Multicolinearity, Normality
+ - [ ] Multicolinearity, Autocorrelation
  - [ ] Autocorrelation, Normality
  - [ ] Linearity, Autocorrelation
- - [ ] Heteroscedasticity, Multicolinearity
+ - [ ] Heteroscedasticity, Autocorrelation
 
-8. Which of this following statement below is TRUE based on autocorrelation assumption?
+8. Which of this following statement below is TRUE based on autocorrelation assumption in time series object?
  - [ ] there are no autocorrelation in error so each error does not has relation
  - [ ] there are autocorrelation in error, so each error has relation
  - [ ] there are autocorrelation of each prediction data, so each predicted data has relation
