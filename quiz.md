@@ -13,7 +13,7 @@ The `theft` data consists of 6.492 observations and  2 variables. `theft` datase
 * `Date` : Date when the incident occurred.
 * `Amount_Theft` : The frequent of total amount of theft each date.
 
-As a data science you will develop a forecasting modeling that aid security or endurance parties in making decision. Aim of making this forecasting model is to anticipate if there is a crime happened and allocate security parties in many city of Chicago. Based on our data, we want to predict the number of theft incident based on `Amount_Theft` by `Date` column.
+As a data sciencetist you will develop a forecasting modeling that aid security or endurance parties in making decision. Aim of making this forecasting model is to anticipate if there is a crime happened and allocate security parties in many city of Chicago. Based on our data, we want to predict the number of theft incident based on `Amount_Theft` by `Date` column.
 
 Before we make a forecasting model, let inspect our data first. Is our data is a time series object or not? If it's not please make a time series object using the `theft` data using `ts()` function with frequency of this period is 365 and store it under `theft_ts`. Using `theft_ts` visualize it with `autoplot()`.
 
